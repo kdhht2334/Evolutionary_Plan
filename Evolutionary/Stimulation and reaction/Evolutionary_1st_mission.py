@@ -6,8 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib import cm
 from mpl_toolkits.mplot3d import Axes3D
-2
+
 import time
+
+import torch
 
 # Our 2-dimensional distribution will be over variables X and Y
 N = 60
