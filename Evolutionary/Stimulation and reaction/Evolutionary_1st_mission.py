@@ -78,14 +78,16 @@ for i in range(100):
     ax.plot_surface(X, Y, Z, rstride=3, cstride=3, linewidth=1, antialiased=True,
                     cmap=cm.viridis)
     
-    cset = ax.contourf(X, Y, Z, zdir='z', offset=-0.15, cmap=cm.viridis)
+#    cset = ax.contourf(X, Y, Z, zdir='z', offset=-0.15, cmap=cm.viridis)
     
     # Adjust the limits, ticks and view angle
-    ax.set_zlim(-0.15,0.2)
-    ax.set_zticks(np.linspace(0,0.2,5))
+#    ax.set_zlim(-0.15,0.2)
+    ax.set_zlim(0.0,0.1)
+    ax.set_zticks(np.linspace(0,0.1,5))
     ax.view_init(27, -21)
     ax.set_title('{}-th experiments'.format(i))
+    plt.axis('off')
     plt.show()
     
-    time.sleep(10)
+    time.sleep(1)
 
